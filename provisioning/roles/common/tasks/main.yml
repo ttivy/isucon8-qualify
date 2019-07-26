@@ -7,6 +7,8 @@
     gid: 1001
     state: present
     system: no
+  tags:
+    - create_user
 
 - name: Create isucon user
   become: yes
@@ -20,6 +22,8 @@
     shell: /bin/bash
     state: present
     system: no
+  tags:
+    - create_user
 
 - name: Add sudoers
   become: yes
