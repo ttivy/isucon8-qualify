@@ -9,7 +9,7 @@ $ vim hosts
 $ ansible-playbook -i hosts site.yml --skip-tags "create_user"
 
 
-# isucon ユーザーが既に存在しない場合
+# isucon ユーザーが存在しない場合
 $ vim hosts
 # host 及び ssh_user を設定
 $ ansible-playbook -i hosts site.yml
