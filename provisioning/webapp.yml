@@ -1,5 +1,5 @@
 ---
-- hosts: webapp2
+- hosts: webapp
   roles:
     - common
     - install_h2o
@@ -13,3 +13,4 @@
     - deploy_webapp
     - prepare_webapp
     - initialize_db
+    - start_perl_webapp
